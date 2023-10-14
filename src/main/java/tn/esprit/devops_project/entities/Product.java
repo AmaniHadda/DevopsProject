@@ -26,6 +26,7 @@ public class Product implements Serializable {
 
     float price;
 
+
     int quantity;
     @Enumerated(EnumType.STRING)
     ProductCategory category;

@@ -19,18 +19,28 @@ import lombok.experimental.FieldDefaults;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Operator implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+	@NonNull
 	Long idOperateur;
+	@NonNull
 	String fname;
+	@NonNull
 	String lname;
+	@NonNull
 	String password;
 	@OneToMany
 	@JsonIgnore
 	Set<Invoice> invoices;
-	
+
 }
+
+
+
+

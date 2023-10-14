@@ -26,6 +26,7 @@ public class ProductServiceImpl implements IProductService {
        Stock stock = stockRepository.findById(idStock).orElseThrow(() -> new NullPointerException("stock not found"));
 
 
+
         product.setStock(stock);
         return productRepository.save(product);
     }
