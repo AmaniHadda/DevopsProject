@@ -5,7 +5,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+
 import java.io.Serializable;
 
 @Entity
@@ -14,7 +14,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-
 public class Product implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
