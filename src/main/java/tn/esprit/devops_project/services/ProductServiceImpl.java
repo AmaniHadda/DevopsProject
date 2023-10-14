@@ -17,22 +17,15 @@ import java.util.List;
 @Slf4j
 public class ProductServiceImpl implements IProductService {
 
-<<<<<<< HEAD
+
    ProductRepository productRepository;
    StockRepository stockRepository;
 
     @Override
-    public Product addProduct(Product product, long idStock) {
+    public Product addProduct(Product product, Long idStock) {
        Stock stock = stockRepository.findById(idStock).orElseThrow(() -> new NullPointerException("stock not found"));
 
-=======
-   final ProductRepository productRepository;
-   final StockRepository stockRepository;
 
-    @Override
-    public Product addProduct(Product product, Long idStock) {
-        Stock stock = stockRepository.findById(idStock).orElseThrow(() -> new NullPointerException("stock not found"));
->>>>>>> df2c7946e4860a60fe6d76fd3e8524d9430002d9
         product.setStock(stock);
         return productRepository.save(product);
     }
