@@ -10,9 +10,11 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
+
 public class StockServiceImpl implements IStockService {
 
-   private final StockRepository stockRepository;
+
+    StockRepository stockRepository;
 
     @Override
     public Stock addStock(Stock stock) {

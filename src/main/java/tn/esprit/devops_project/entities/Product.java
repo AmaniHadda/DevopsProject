@@ -25,12 +25,11 @@ public class Product implements Serializable {
     String title;
 
     float price;
-
-
     int quantity;
     @Enumerated(EnumType.STRING)
     ProductCategory category;
     @ManyToOne
     @JsonIgnore
     Stock stock;
+
 }

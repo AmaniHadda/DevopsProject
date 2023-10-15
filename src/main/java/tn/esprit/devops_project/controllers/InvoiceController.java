@@ -30,6 +30,10 @@ public class InvoiceController {
         invoiceService.cancelInvoice(invoiceId);
     }
 
+    @PostMapping("/invoice")
+    public void addInvoice(@RequestBody Invoice invoice) {
+        invoiceService.addInvoice(invoice);
+    }
     @GetMapping("/invoice/supplier/{supplierId}")
     public List<Invoice> getInvoicesBySupplier(@PathVariable Long supplierId) {
         return invoiceService.getInvoicesBySupplier(supplierId);

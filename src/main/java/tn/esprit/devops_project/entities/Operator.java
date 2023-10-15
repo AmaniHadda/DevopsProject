@@ -1,6 +1,7 @@
 package tn.esprit.devops_project.entities;
 
 import java.io.Serializable;
+
 import java.util.Set;
 
 import javax.persistence.Entity;
@@ -21,6 +22,7 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
+
 public class Operator implements Serializable{
 	private static final long serialVersionUID = 1L;
 
@@ -40,6 +42,7 @@ public class Operator implements Serializable{
 	Set<Invoice> invoices;
 
 }
+
 
 
 

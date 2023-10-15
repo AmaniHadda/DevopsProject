@@ -1,5 +1,7 @@
 package tn.esprit.devops_project.entities;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -19,5 +21,6 @@ public class Stock implements Serializable {
     long idStock;
     String title;
     @OneToMany(mappedBy = "stock")
+    @JsonIgnore
     Set<Product> products;
 }
