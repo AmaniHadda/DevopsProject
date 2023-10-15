@@ -18,12 +18,12 @@ import java.util.List;
 public class ProductServiceImpl implements IProductService {
 
 
-   ProductRepository productRepository;
-   StockRepository stockRepository;
+    ProductRepository productRepository;
+    StockRepository stockRepository;
 
     @Override
     public Product addProduct(Product product, Long idStock) {
-       Stock stock = stockRepository.findById(idStock).orElseThrow(() -> new NullPointerException("stock not found"));
+        Stock stock = stockRepository.findById(idStock).orElseThrow(() -> new NullPointerException("stock not found"));
 
 
 

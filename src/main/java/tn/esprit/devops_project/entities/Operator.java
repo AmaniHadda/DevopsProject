@@ -43,4 +43,3 @@ public class Operator implements Serializable{
 
 
 
-
