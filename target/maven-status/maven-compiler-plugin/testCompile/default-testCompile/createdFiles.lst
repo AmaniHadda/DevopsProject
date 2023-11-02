@@ -1,9 +1,11 @@
 tn\esprit\devops_project\services\ProductServiceImplTest.class
+tn\esprit\devops_project\services\ActivitySectorImplTestJunit.class
+tn\esprit\devops_project\services\InvoiceServiceImplMockTest.class
+tn\esprit\devops_project\services\ProductServiceImplTestJunit.class
 tn\esprit\devops_project\services\ActivitySectorImplTest$1.class
 tn\esprit\devops_project\services\SupplierServiceImplTest.class
 tn\esprit\devops_project\services\OperatorServiceImplTest$1.class
 tn\esprit\devops_project\services\ProductServiceImplTest$1.class
-tn\esprit\devops_project\services\InvoiceServiceImplMockTest.class
 tn\esprit\devops_project\services\OperatorServiceImplTest.class
 tn\esprit\devops_project\services\StockServiceImplTest.class
 tn\esprit\devops_project\services\SupplierServiceImplTest$1.class
