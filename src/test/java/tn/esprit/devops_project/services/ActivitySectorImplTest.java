@@ -20,7 +20,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
-@Profile("test")
+@ActiveProfiles("test")
 class ActivitySectorImplTest {
     @Mock
     ActivitySectorRepository activitySectorRepository;
