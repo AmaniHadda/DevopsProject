@@ -7,6 +7,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.devops_project.entities.Stock;
 import tn.esprit.devops_project.repositories.StockRepository;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.util.HashSet;
 import java.util.List;
