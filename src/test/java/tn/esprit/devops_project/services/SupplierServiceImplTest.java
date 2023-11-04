@@ -20,7 +20,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
-
+@ActiveProfiles("test")
 class SupplierServiceImplTest {
     Supplier supplier = new Supplier(1L,"code1", "label1",SupplierCategory.ORDINAIRE, null, null);
     @Autowired
