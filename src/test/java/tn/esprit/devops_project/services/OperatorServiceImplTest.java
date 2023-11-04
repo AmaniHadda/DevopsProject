@@ -21,7 +21,7 @@ import java.util.Optional;
 //
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
-@Profile("test")
+@ActiveProfiles("test")
 class OperatorServiceImplTest {
 
   @InjectMocks
