@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @SpringBootTest
 @Transactional
-@Profile("test")
+@ActiveProfiles("test")
 public class ProductServiceImplTestJunit {
     @Autowired
     ProductServiceImpl productService;
