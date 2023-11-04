@@ -12,6 +12,7 @@ import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.entities.Supplier;
 import tn.esprit.devops_project.entities.SupplierCategory;
 import tn.esprit.devops_project.repositories.ActivitySectorRepository;
+import org.springframework.test.context.ActiveProfiles;
 
 import javax.transaction.Transactional;
 import java.util.List;
