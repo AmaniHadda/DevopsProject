@@ -9,6 +9,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Profile;
 import tn.esprit.devops_project.entities.ActivitySector;
 import tn.esprit.devops_project.repositories.ActivitySectorRepository;
 
@@ -19,11 +20,10 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
+@Profile("test")
 class ActivitySectorImplTest {
-    @Autowired
     @Mock
     ActivitySectorRepository activitySectorRepository;
-    @Autowired
     @InjectMocks
     ActivitySectorImpl activitySector;
     ActivitySector actSector=new ActivitySector(3L,"l4", "aa", null);

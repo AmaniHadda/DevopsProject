@@ -8,6 +8,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Profile;
 import tn.esprit.devops_project.entities.Operator;
 import tn.esprit.devops_project.repositories.OperatorRepository;
 import tn.esprit.devops_project.services.OperatorServiceImpl;
@@ -20,6 +21,7 @@ import java.util.Optional;
 //
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
+@Profile("test")
 class OperatorServiceImplTest {
 
   @InjectMocks
