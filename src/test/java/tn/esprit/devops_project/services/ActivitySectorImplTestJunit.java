@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @SpringBootTest
 @Transactional
-@Profile("test")
+@ActiveProfiles("test")
 public class ActivitySectorImplTestJunit {
     @Autowired
     ActivitySectorRepository activitySectorRepository;
