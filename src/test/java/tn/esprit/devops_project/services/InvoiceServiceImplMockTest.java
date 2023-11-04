@@ -28,7 +28,7 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 @SpringBootTest
-@Profile("test")
+@ActiveProfiles("test")
 public class InvoiceServiceImplMockTest {
     @Mock
     private InvoiceRepository invoiceRepository;
