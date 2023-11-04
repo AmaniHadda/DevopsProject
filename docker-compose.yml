@@ -16,7 +16,7 @@ services:
   app:
     depends_on:
       - mysqldb
-    image: amanihadda/springproject
+    image: amanihadda/springproject:tag123
     restart: always
     ports:
       - "8082:8082"
