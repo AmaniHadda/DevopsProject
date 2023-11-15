@@ -75,5 +75,17 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+	        mail to: "amani.hadda@esprit.tn",
+            subject: "Pipeline Backend Success ",
+            body: "Welcome to Spring project Backend : Success on job ${env.JOB_NAME}, Build Number: ${env.BUILD_NUMBER}, Build URL: ${env.BUILD_URL}"
+        }
+	    failure {
+            mail to: "amani.hadda@esprit.tn",
+            subject: "Pipeline backend Failure",
+            body: "Welcome to Spring project Backend : Failure on job ${env.JOB_NAME}, Build Number: ${env.BUILD_NUMBER}, Build URL: ${env.BUILD_URL} "
+            }
+    }
 }
 
